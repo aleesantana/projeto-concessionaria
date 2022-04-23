@@ -43,6 +43,11 @@ body {
 #navbar .navbar-container .menu-itens a {
     text-decoration: none;
     color: white;
+    transition: 500ms;
+}
+
+#navbar .navbar-container .menu-itens a:hover {
+    text-decoration: underline red 5px;
 }
 
 #navbar .titulo {
@@ -84,6 +89,13 @@ body {
 	width: 200px;
 	float: left;
 	margin: 0 10px 0 25%;
+    box-shadow: 5px 5px 5px black;
+    transition: 300ms;
+}
+
+#conteudo-principal .ford-focus:hover {
+    opacity: 0.6;
+    cursor: pointer;
 }
 
 /* Mapa */
@@ -168,6 +180,11 @@ body {
     text-align: center;
     font-size: 0.7rem;
     padding: 5px;
+}
+
+#footer span:hover {
+    color: red;
+    cursor: pointer;
 }
 
 

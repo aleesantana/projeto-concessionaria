@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style-contato.css">
+    <title>Contato - Santana Veículos</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <navbar id="navbar">
+        <div class="navbar-container">
+            <img src="img/logo-car.png" alt="Logo red" class="logo">
+            <div class="titulo">Santana Veículos</div>
+            <ul class="menu-itens">
+                <li class="menu-item"><a href="index.html">Início</a></li>
+                <li class="menu-item"><a href="estoque.html">Estoque</a></li>
+                <li class="menu-item"><a href="contato.html">Fale Conosco</a></li>           
+            </ul>
+        </div>
+    </navbar>
+    <hr>
+
+    <!-- Main Principal -->
+    <form id="formulario">
+
+            <!-- Fieldset de contato tipo text  -->
+        <div class="container">
+            <filedset class="contato">
+                <label for="nomesobrenome">Nome e sobrenome: </label>
+                <input type="text" id="nomesobrenome" class="input-padrao" required>
+                <label for="email">Email: </label>
+                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+                <label for="telefone">Telefone: </label>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+                <label for="mensagem">Mensagem </label>
+                <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+            </filedset>
+            <!-- Filedset de contato do tipo radio -->
+            <fieldset id="radio">
+                <legend>Como prefere o nosso contato?</legend>
+                <label class="radio-item" for="radio-email"><input type="radio" name="contato" value="email"> Email</label>
+            
+                <label class="radio-item" for="radio-telefone"><input type="radio" name="contato" value="telefone"> Telefone</label>
+            
+                <label class="radio-item" for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" checked> WhatsApp</label>
+            </fieldset>
+            <!-- Fieldset de select -->
+            <fieldset id="horario">
+                <legend>Qual horário prefere ser atendido?</legend>
+                <select>
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </fieldset>
+            <!-- Checkbox -->
+            <label class="checkbox"><input type="checkbox" checked>Quero receber novidades por email.</label>
+            <!-- Botão de enviar -->
+            <input type="submit" value="Enviar formulário" class="enviar">
+        </div>
+    </form>
+</body>
+</html>

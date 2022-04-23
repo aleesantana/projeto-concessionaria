@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: rgb(236, 235, 235);
+}
+
+fieldset {
+    border: none;
+}
+
+/* NAVBAR */
+#navbar {
+    display: flex;
+    background-color: rgba(0, 0, 0, 1);
+    justify-content: center;
+}
+
+#navbar .navbar-container {
+    width: 60%;  /* ocupação da largura da página*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding: 15px 0;
+    ;
+}
+
+#navbar .navbar-container .logo {
+    height: 90px;
+    width: auto;
+}
+
+#navbar .navbar-container ul {
+    list-style: none;
+    display: flex;
+    font-weight: bold;
+}
+
+#navbar .navbar-container ul li {
+    padding: 0 25px;
+}
+
+#navbar .navbar-container .menu-itens a {
+    text-decoration: none;
+    color: white;
+    transition: 500ms;
+}
+
+#navbar .navbar-container .menu-itens a:hover {
+    text-decoration: underline red 5px;
+}
+
+#navbar .titulo {
+    color: red;
+    padding-right: 420px;
+    font-weight: bold;
+}
+
+/* Formulário */
+#formulario {
+    width: 500px;
+    margin: 0 auto;
+    box-shadow: 10px 10px 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+#formulario .container {
+    padding: 15px;
+}
+
+#formulario form label, form legend {
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+#formulario .input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 88%;
+}
+
+/* Fieldset radio */
+#radio .radio-item {
+    margin-right: 20px;
+}
+
+#radio {
+    margin-bottom: 30px;
+}
+
+/* Fieldset horário */
+#horario {
+    margin-bottom: 20px;
+}
+
+#horario select {
+    padding: 5px;
+    border-radius: 2px;
+}
+
+/* Checkbox */
+input {
+	margin-right: 5px;
+}
+
+.checkbox {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+/* Botão enviar */ 
+.enviar {
+	width: 30%;
+	padding: 3px 0;
+	background: black;
+	color: white;
+	font-size: 15px;
+	border: none;
+	border-radius: 5px;
+	transition: 0.5s; 
+}
+
+.enviar:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
